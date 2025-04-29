@@ -28,7 +28,8 @@ We encourage you to approach the assignments in the way that best reflects your 
 
 - **Git Usage (Bonus Points)**:  
   Using Git to organize and submit your work is always a big plus. It demonstrates your ability to work in a version-controlled environment and aligns with how we collaborate as a team.  
-  - Fork this repository, create a branch for your solutions, and submit your work via a pull request.  
+  - Fork this repository (make it private), create a branch for your solutions, and send us the link to your fork.
+     - NOTE: do not create a pull request to avoid others being able to view your answers.
   - Alternatively, you can create a separate repository in your own GitHub account and share the link with us.
 
 - **Alternative Methods**:  
