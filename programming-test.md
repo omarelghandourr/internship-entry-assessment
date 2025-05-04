@@ -30,7 +30,7 @@ for i in range(1, 101):
     print(out)
     if i % 5 == 0:
         print('---')
-'''
+```
 
    
 ## Exercise 2
