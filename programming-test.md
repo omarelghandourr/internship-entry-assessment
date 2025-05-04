@@ -99,6 +99,44 @@ B --|> A
 C --|> B
 ```
 
+### Solve: 
+```{python}
+from abc import ABC, abstractmethod
+
+# Abstract class A
+class A(ABC):
+    def __init__(self, name):
+        self._name = name  # Protected attribute
+
+    @abstractmethod
+    def PrintName(self):
+        pass
+
+# Class B inherits from A
+class B(A):
+    def __init__(self, name):
+        super().__init__(name)
+
+    def __PrintName(self, message):  # Private method
+        print(f"B (private): {message}")
+
+# Class C inherits from B
+class C(B):
+    def __init__(self, name):
+        super().__init__(name)
+
+    def PrintName(self, message):  # Public override method
+        print(f"C (public): {message}")
+
+# Class D inherits from A
+class D(A):
+    def __init__(self, name):
+        super().__init__(name)
+
+    def PrintName(self):
+        print(f"D: {self._name}")
+```
+
 ### 2. **Key Questions**  
    - Are you able to directly create a new instance of `ObjectA`? Please explain your answer.  
    - Given an instance of `ObjectC`, are you able to call the method `PrintMessage` defined in `ObjectB`? Please explain your answer.  
@@ -167,10 +205,10 @@ This exercise focuses on strategies for working with existing code bases and ens
 
 
 - Which design patterns or principles would you apply to achieve this balance
-There are many patterns, I will favor using after inishing "Test-Driven Development Strategy": Encourages modular, testable, and well-defined code from the start.
 
 ### Solve:
 
+There are many patterns, I will favor using after inishing "Test-Driven Development Strategy": Encourages modular, testable, and well-defined code from the start.
 
 
 ---
