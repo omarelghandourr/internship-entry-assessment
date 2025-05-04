@@ -56,10 +56,18 @@ MVC is staning for (Model - View - Controller). It is mainly a software architic
 3. Controller: it is mainly a linkage that connect the Model with the View (Processing point of view)
 
 There are various use cases for this architecture like: (Web frameworks - Desktop GUI - Mobile applications)
+
 ### 3. **List three other design patterns**  
    - Provide names and details for three additional design patterns.
    - Explain how you have used those patterns in the past and how they have solved your problem  
    - Use diagrams to explain the design patterns.
+
+### Solve:
+1. Factory Pattern: used in a machine learning framework to generate different types of classifiers (SVM, Random Forest, etc.) based on user input without modifying the core code.
+
+ 2. Observer Pattern: implemented in a sensor network simulation where each sensor node observed the environment and notified a central dashboard when specific thresholds were reached
+
+3. Singleton Pattern: used in a Python app to ensure the logging system was centralized, avoiding duplicate log file handlers.
 
 ---
 
@@ -106,10 +114,32 @@ This exercise focuses on strategies for working with existing code bases and ens
 
 ### 1. **Working with Existing Code**  
 - How would you approach understanding and contributing to an existing code base with minimal disruption?  
+
+### Solve:
+1. Initial Exploration: start with README, then the dependencies, then the call herarchies, mapping the whole code. Then try to deal with this code as a "BLACK BOX" and see what are the required inputs/outout from that box.
+
+2. Test Code: local test the original code with some various critical input cases. Use some breakpoints and debuging tools to see the behaviour of the code and verify my understanding to that code.
+
+3. Enhance or make the main task: Begin this step with a non-critital or isolated solution trying to add or enhance the critical points and may test them initialy privetly before publishing them.
+
+
+
 - What practices would you follow to ensure your changes integrate well with the current structure?  
 
+### Solve: 
+1. Try as much as possible to follow the same stratigy that the code is written by.
+2. adding effective comments, and more less more powerful comments.
+3. try to add test cases and validation stuff for that code.
+
+
+
 ### 2. **Ensuring Maintainability**  
-- What techniques would you use to keep the code base clean, modular, and easy to maintain as new features are added?  
+- What techniques would you use to keep the code base clean, modular, and easy to maintain as new features are added? 
+### Solve: 
+
+
+
+
 - How would you handle code documentation and testing to support long-term maintainability?  
 
 ### 3. **Balancing Flexibility and Stability**  
