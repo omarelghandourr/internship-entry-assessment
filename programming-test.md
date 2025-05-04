@@ -17,7 +17,7 @@ Write a program in the language of your choice where:
 
 ---
 
-### Solve (Python)
+### Solve (Python):
 
 ```{python}
 import random
@@ -37,12 +37,25 @@ for i in range(1, 101):
 
 ### 1. **What is your understanding of the term “Design Patterns”?**  
    Provide a description in your own words.
+### Solve:
+The Design patterns are solutions to common software design programs, they are not a code as much as they are a footprints that guides the reader how to construct the code to solve specific problem in an efficient & flexible way.
+
+
+
+
 
 ### 2. **Explain the MVC Pattern**  
    - What does MVC stand for?  
    - Explain the pattern in detail.  
    - What are some use cases for this framework?
 
+### Solve:
+MVC is staning for (Model - View - Controller). It is mainly a software architicture that seperates the logic of the application into 3 components. which are: 
+1. Model: Mainly responsible for handling interaction with the core of the software (whether with Backend or Database)
+2. View: The User-interface part with is responsible of taking interactions from the user and viewing the requried output from the software to the user.
+3. Controller: it is mainly a linkage that connect the Model with the View (Processing point of view)
+
+There are various use cases for this architecture like: (Web frameworks - Desktop GUI - Mobile applications)
 ### 3. **List three other design patterns**  
    - Provide names and details for three additional design patterns.
    - Explain how you have used those patterns in the past and how they have solved your problem  
