@@ -136,13 +136,41 @@ This exercise focuses on strategies for working with existing code bases and ens
 ### 2. **Ensuring Maintainability**  
 - What techniques would you use to keep the code base clean, modular, and easy to maintain as new features are added? 
 ### Solve: 
+1. Follow the Single Responsibility Principle as each class should have one reason to change.
+
+2. Try making common logic or functions needed in a shared utilites or base classes to avoind non-sense code statments,
+
+3. Use consistent, well-defined interfaces between modules.
+
 
 
 
 
 - How would you handle code documentation and testing to support long-term maintainability?  
 
+
+
+### Solve:
+ 1. inline comments and notes  (Why-What-Where) for such a complex loginc
+ 2. good README file and comprehensive 
+ 3. for testing, may be Automated or AI testing based on the project and on the company criterias
+ 4. might share some other peers reviews if it requires to and without any restriction regrding that code.
+
 ### 3. **Balancing Flexibility and Stability**  
 - How would you design or refactor the software to make it flexible for future changes while ensuring the existing functionality remains stable?  
+
+### Solve:
+
+1. Abstraction layers wiht a good detailed and maintained to make it easier to swap components later.
+2. Making A versions API's to avoid breaking changes. 
+
+
+
 - Which design patterns or principles would you apply to achieve this balance
+There are many patterns, I will favor using after inishing "Test-Driven Development Strategy": Encourages modular, testable, and well-defined code from the start.
+
+### Solve:
+
+
+
 ---
