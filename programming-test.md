@@ -19,7 +19,7 @@ Write a program in the language of your choice where:
 
 ### Solve (Python)
 
-```python
+```{python}
 import random
 
 for i in range(1, 101):
@@ -30,7 +30,9 @@ for i in range(1, 101):
     print(out)
     if i % 5 == 0:
         print('---')
+'''
 
+   
 ## Exercise 2
 
 ### 1. **What is your understanding of the term “Design Patterns”?**  
