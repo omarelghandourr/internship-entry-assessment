@@ -131,19 +131,18 @@ class D(A):
 ### 2. **Key Questions**  
    - Are you able to directly create a new instance of `ObjectA`? Please explain your answer. 
 
+   - Given an instance of `ObjectC`, are you able to call the method `PrintMessage` defined in `ObjectB`? Please explain your answer. 
+   - Try to explain as many key features of object-oriented programming as you can find in this example.
+
+
 ### Solve:
 No, you cannot directly create an instance of class A because:
 
 It's marked as abstract in the diagram (<<abstract>>), and In Python, we enforce this using the ABC metaclass and @abstractmethod decorator
 
-
-   - Given an instance of `ObjectC`, are you able to call the method `PrintMessage` defined in `ObjectB`? Please explain your answer.  
-
 ### Solve:
  No, the method PrintName(message) in class B is private (indicated by __), which means it is not accessible from outside the class or by subclasses. however,, ObjectC defines its own public version of PrintName(message), which is the method that would be called.
 
-
-   - Try to explain as many key features of object-oriented programming as you can find in this example.
 ### Solve:
 Abstraction: Class A is abstract — it defines a method but doesn’t implement it.
 
@@ -154,8 +153,6 @@ Encapsulation: Internal details like _name and __PrintName are hidden.
 Polymorphism: PrintName works differently in each subclass.
 
 Access Control: _name: protected and for __PrintName: private ,,, and PrintName: public in C and D
-
-
 
 
 ---
