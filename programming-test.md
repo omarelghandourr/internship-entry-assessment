@@ -133,9 +133,7 @@ class D(A):
 
 
 ### Solve:
-No, you cannot directly create an instance of class A because:
-
-It's marked as abstract in the diagram (<<abstract>>), and In Python, we enforce this using the ABC metaclass and @abstractmethod decorator
+No, you cannot directly create an instance of class A.
 
 ### Solve:
  No, the method PrintName(message) in class B is private (indicated by __), which means it is not accessible from outside the class or by subclasses. however,, ObjectC defines its own public version of PrintName(message), which is the method that would be called.
