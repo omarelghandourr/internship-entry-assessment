@@ -101,12 +101,10 @@ C --|> B
 
 ### Solve: 
 ```{python}
-from abc import ABC, abstractmethod
 
 class A(ABC):
     def __init__(self, name):
-        self._name = name  # protected ..attribute
-    @abstractmethod
+        self._name = name
     def PrintName(self):
         pass
 class B(A):
@@ -123,7 +121,6 @@ class C(B):
 class D(A):
     def __init__(self, name):
         super().__init__(name)
-
     def PrintName(self):
         print(f"D: {self._name}")
 ```
