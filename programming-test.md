@@ -103,32 +103,23 @@ C --|> B
 ```{python}
 from abc import ABC, abstractmethod
 
-# Abstract class A
 class A(ABC):
     def __init__(self, name):
-        self._name = name  # Protected attribute
-
+        self._name = name  # protected ..attribute
     @abstractmethod
     def PrintName(self):
         pass
-
-# Class B inherits from A
 class B(A):
     def __init__(self, name):
         super().__init__(name)
-
-    def __PrintName(self, message):  # Private method
+    def __PrintName(self, message):
         print(f"B (private): {message}")
-
-# Class C inherits from B
 class C(B):
     def __init__(self, name):
         super().__init__(name)
 
-    def PrintName(self, message):  # Public override method
+    def PrintName(self, message): 
         print(f"C (public): {message}")
-
-# Class D inherits from A
 class D(A):
     def __init__(self, name):
         super().__init__(name)
@@ -138,9 +129,34 @@ class D(A):
 ```
 
 ### 2. **Key Questions**  
-   - Are you able to directly create a new instance of `ObjectA`? Please explain your answer.  
+   - Are you able to directly create a new instance of `ObjectA`? Please explain your answer. 
+
+### Solve:
+No, you cannot directly create an instance of class A because:
+
+It's marked as abstract in the diagram (<<abstract>>), and In Python, we enforce this using the ABC metaclass and @abstractmethod decorator
+
+
    - Given an instance of `ObjectC`, are you able to call the method `PrintMessage` defined in `ObjectB`? Please explain your answer.  
+
+### Solve:
+ No, the method PrintName(message) in class B is private (indicated by __), which means it is not accessible from outside the class or by subclasses. however,, ObjectC defines its own public version of PrintName(message), which is the method that would be called.
+
+
    - Try to explain as many key features of object-oriented programming as you can find in this example.
+### Solve:
+Abstraction: Class A is abstract — it defines a method but doesn’t implement it.
+
+Inheritance: Classes B, C, and D build on class A.
+
+Encapsulation: Internal details like _name and __PrintName are hidden.
+
+Polymorphism: PrintName works differently in each subclass.
+
+Access Control: _name: protected and for __PrintName: private ,,, and PrintName: public in C and D
+
+
+
 
 ---
 
